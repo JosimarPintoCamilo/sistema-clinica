@@ -11,5 +11,6 @@ jobs:
       - name: Check out repository code
         uses: actions/checkout@v2
       - name: Rodando os testes do projeto
-      - run: |
+        run: |
+        echo 'Rodando os testes do projeto'
         php artisan test
