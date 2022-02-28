@@ -1,6 +1,6 @@
 name: Rodando os testes do projeto
 on:
-  push:
+  pull_request:
     branches:
       - develop
 jobs:
