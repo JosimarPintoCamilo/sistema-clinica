@@ -12,5 +12,5 @@ jobs:
         uses: actions/checkout@v2
       - name: Rodando os testes do projeto
         run: |
-          echo 'Rodando os testes do projeto'
+          composer install
           php artisan test
