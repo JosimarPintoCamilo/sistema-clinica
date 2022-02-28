@@ -1,8 +1,9 @@
 name: Rodando os testes do projeto
 on:
-  push:
-    branches:
-      - develop
+  pull_request:
+    types: [opened, reopened]
+  branches:
+    - develop
 jobs:
   test-code:
     runs-on: ubuntu-latest
