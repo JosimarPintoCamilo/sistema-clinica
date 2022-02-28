@@ -1,0 +1,16 @@
+name: Rodando os testes do projeto
+on:
+  pull_request:
+    types: [opened, reopened]
+  branches:
+    - develop
+jobs:
+  test-code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository code
+        uses: actions/checkout@v2
+      - name: Rodando os testes do projeto
+      - run: |
+        echo "🎉 Rodando os testes do projeto"
+          php artisan test
